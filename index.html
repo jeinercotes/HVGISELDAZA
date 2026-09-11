@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida | Gisel Lorena Daza Pallares</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=J9RYoe2Zm-ZTRvnwnYLtlSWPiJOxXYvDghQISBx9HVEcjcvkR4yIdBZyVqQ50RxitHDHerNbj9sgtw-xZMfOkTNts4NMSgv5lyYsfEHvHjH6LkuxBEcwVoX8_3LnAW5pXmp7UoD2vPdRf80RS-9d_PQ4XEQS52zmLc7BtzzLXLeE65wHXMNkxlpUAIt30b_d5KTb5Hya71eQkVt8-SC1uMe_K2DEcYboLQgesmkVEiXMvNxq-Fo_v5kHUKIxd-AeBJXYIdvx-589LrRVToDby_Py7N8_f4niwJdeUKu8vWU6X6EYjKV60sHT_7Db4DqB" charset="UTF-8"></script><style>
+        /* ==========================================
+           VARIABLES Y PALETA DE COLORES
+           ========================================== */
+        :root {
+            /* Paleta en Modo Claro */
+            --primary-fuchsia: #d81b60;
+            --primary-hover: #b0114b;
+            --secondary-rose: #f48fb1;
+            --rose-light: #fce4ec;
+            --bg-body: #f7f5f8;
+            --bg-card: #ffffff;
+            --bg-accent: #f8f1f4;
+            --text-dark: #1f1f2e;
+            --text-muted: #6c757d;
+            --border-color: #e9ecef;
+            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 12px 28px rgba(216, 27, 96, 0.15);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Paleta en Modo Oscuro (Fondos Negros/Oscuros con acentos fucsia) */
+        [data-theme="dark"] {
+            --bg-body: #0d0d11;
+            --bg-card: #16161e;
+            --bg-accent: #1f1a24;
+            --text-dark: #f0f0f5;
+            --text-muted: #a0a0b5;
+            --border-color: #2a2a3a;
+            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+            --shadow-hover: 0 12px 28px rgba(216, 27, 96, 0.3);
+        }
+
+        /* RESET & BASE */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            line-height: 1.6;
+            transition: var(--transition);
+        }
+
+        a {
+            color: var(--primary-fuchsia);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* UTILITIES */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: var(--rose-light);
+            color: var(--primary-fuchsia);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+        }
+
+        .section-title i {
+            color: var(--primary-fuchsia);
+            background: var(--rose-light);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(to right, var(--rose-light), transparent);
+            margin-left: 10px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        [data-theme="dark"] .navbar {
+            background-color: rgba(22, 22, 30, 0.92);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-brand {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-fuchsia);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.92rem;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--primary-fuchsia);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-icon {
+            background: var(--bg-accent);
+            border: none;
+            color: var(--text-dark);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .btn-icon:hover {
+            background: var(--primary-fuchsia);
+            color: white;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            margin-top: 90px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-accent) 100%);
+            border-radius: var(--radius-lg);
+            padding: 40px 30px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(45deg, var(--primary-fuchsia), var(--secondary-rose));
+            box-shadow: var(--shadow-md);
+        }
+
+        .profile-img-placeholder {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            border: 2px dashed var(--secondary-rose);
+            overflow: hidden;
+        }
+
+        .profile-img-placeholder i {
+            font-size: 3rem;
+            color: var(--primary-fuchsia);
+            margin-bottom: 5px;
+        }
+
+        .profile-img-placeholder span {
+            font-size: 0.7rem;
+            text-align: center;
+            padding: 0 5px;
+            font-weight: 500;
+        }
+
+        .hero-text h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--primary-fuchsia);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .hero-quote {
+            font-style: italic;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto 25px auto;
+            font-size: 0.95rem;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            border: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-fuchsia);
+            color: white;
+            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(216, 27, 96, 0.4);
+        }
+
+        .btn-second {
+            background-color: var(--secondary-rose);
+            color: white;
+            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+        }
+
+        .btn-second:hover {
+            background-color: var(--second-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(216, 27, 96, 0.4);
+        }
+        .btn-secondary {
+            background-color: var(--bg-card);
+            color: var(--text-dark);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-accent);
+            border-color: var(--primary-fuchsia);
+            color: var(--primary-fuchsia);
+        }
+
+        .privacy-toggle-box {
+            margin-top: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--bg-card);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            font-size: 0.85rem;
+        }
+
+        /* SWITCH TOGGLE */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 22px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--primary-fuchsia);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(18px);
+        }
+
+        /* LAYOUT PRINCIPAL (2 COLUMNAS EN DESKTOP) */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        /* DATOS PERSONALES & CONTACTO */
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .info-item i {
+            color: var(--primary-fuchsia);
+            font-size: 1.1rem;
+            margin-top: 3px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .info-content .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            font-weight: 600;
+            display: block;
+        }
+
+        .info-content .val {
+            font-size: 0.9rem;
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        /* HABILIDADES */
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .skill-item {
+            background: var(--bg-accent);
+            padding: 10px 14px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-left: 3px solid var(--primary-fuchsia);
+        }
+
+        .skill-item i {
+            color: var(--primary-fuchsia);
+        }
+
+        .skill-name {
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        /* TIMELINE (ESTUDIOS & EXPERIENCIA) */
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary-fuchsia);
+            border: 3px solid var(--bg-card);
+            box-shadow: 0 0 0 2px var(--rose-light);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .timeline-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .timeline-subtitle {
+            font-size: 0.9rem;
+            color: var(--primary-fuchsia);
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .timeline-meta {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .timeline-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* CURSOS GRID */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .course-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .course-card:hover {
+            border-color: var(--secondary-rose);
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-2px);
+        }
+
+        .course-institution {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary-fuchsia);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .course-name {
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .course-date {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* REFERENCIAS */
+        .refs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 15px;
+        }
+
+        .ref-card {
+            background: var(--bg-accent);
+            border-radius: var(--radius-sm);
+            padding: 18px;
+            border-top: 3px solid var(--primary-fuchsia);
+        }
+
+        .ref-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+
+        .ref-detail {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .ref-phone {
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-color);
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 40px;
+        }
+
+        /* BOTÓN VOLVER ARRIBA */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 45px;
+            height: 45px;
+            background: var(--primary-fuchsia);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+            border: none;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-hover);
+            transform: translateY(-3px);
+        }
+
+        /* PRIVACIDAD / BLUR PARA DATOS SENSIBLES */
+        .private-data.hidden-data {
+            filter: blur(5px);
+            user-select: none;
+            opacity: 0.6;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+
+        /* ANIMACIONES AL SCROLL */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==========================================
+           RESPONSIVE DESIGN (MOBILE FIRST OVERRIDES)
+           ========================================== */
+        @media (max-width: 992px) {
+            .main-layout {
+                grid-template-columns: 1fr; /* Una sola columna en móvil y tablet */
+            }
+
+            .hero {
+                padding: 30px 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 1.6rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--bg-card);
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 40px 20px;
+                gap: 25px;
+                transition: var(--transition);
+                box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+
+        /* ==========================================
+           MODO IMPRESIÓN (@media print)
+           ========================================== */
+        @media print {
+            @page {
+                size: A4;
+                margin: 12mm;
+            }
+
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 10pt;
+            }
+
+            .navbar, 
+            .hero-actions, 
+            .privacy-toggle-box, 
+            .back-to-top, 
+            .btn-icon,
+            .hamburger {
+                display: none !important;
+            }
+
+            .hero {
+                margin-top: 0 !important;
+                padding: 0 0 15px 0 !important;
+                background: none !important;
+                border: none !important;
+                border-bottom: 2px solid #d81b60 !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                margin-bottom: 15px !important;
+            }
+
+            .profile-img-container {
+                width: 100px !important;
+                height: 100px !important;
+                box-shadow: none !important;
+            }
+
+            .main-layout {
+                display: grid !important;
+                grid-template-columns: 30% 68% !important;
+                gap: 2% !important;
+            }
+
+            .card {
+                box-shadow: none !important;
+                border: none !important;
+                padding: 0 !important;
+                margin-bottom: 15px !important;
+                background: transparent !important;
+                page-break-inside: avoid;
+            }
+
+            .section-title {
+                font-size: 1.1rem !important;
+                margin-bottom: 10px !important;
+            }
+
+            .section-title i {
+                background: none !important;
+                color: #d81b60 !important;
+                width: auto !important;
+                height: auto !important;
+            }
+
+            .timeline-item, .course-card, .ref-card {
+                page-break-inside: avoid;
+            }
+
+            .courses-grid, .refs-grid {
+                grid-template-columns: 1fr 1fr !important;
+            }
+
+            /* Forzar mostrar datos en impresión si fuera necesario o respetar visibilidad */
+            .private-data.hidden-data {
+                filter: none !important;
+                opacity: 1 !important;
+            }
+
+            footer {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR / MENÚ SUPERIOR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="nav-brand">
+                <i class="fa-solid fa-graduation-cap"></i> Gisel Daza P.
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#perfil" class="nav-link">Perfil</a></li>
+                <li><a href="#estudios" class="nav-link">Estudios</a></li>
+                <li><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                <li><a href="#referencias" class="nav-link">Referencias</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="btn-icon" id="theme-toggle" title="Cambiar Modo Oscuro/Claro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" title="Abrir Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- HERO SECTION -->
+        <header class="hero animate-on-scroll" id="inicio">
+            <div class="hero-content">
+                <div class="profile-img-container">
+                    <div class="profile-img-placeholder">
+                        
+                       
+                        <img src="img/giseldaza.png" alt="Gisel Daza">
+                    </div>
+                </div>
+
+                <div class="hero-text">
+                    <h1>GISEL LORENA DAZA PALLARES</h1>
+                    <div class="hero-subtitle">Técnica en Atención a la Primera Infancia</div>
+                    <p class="hero-quote">
+                        "Profesional orientada al servicio, la atención a la primera infancia y el desarrollo de procesos pedagógicos, con experiencia en acompañamiento, manejo de grupos y atención al usuario."
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://drive.google.com/file/d/1-W5TCzAlIGlxet5T4yG3VaIZovLYv3A_/view?usp=sharing" class="btn btn-primary">
+                            <i class="fa-solid fa-download"></i> Descargar HV Completa PDF
+                        </a>
+
+                        <a href="" class="btn btn-second">
+                            <i class="fa-solid fa-download"></i> Descargar HV Sencilla PDF
+                        </a>
+
+                        <button onclick="window.print()" class="btn btn-secondary">
+                            <i class="fa-solid fa-print"></i> Imprimir CV
+                        </button>
+                        <a href="#contacto" class="btn btn-secondary">
+                            <i class="fa-solid fa-envelope"></i> Contactar
+                        </a>
+                    </div>
+
+                    <div class="privacy-toggle-box">
+                        <i class="fa-solid fa-user-shield" style="color: var(--primary-fuchsia);"></i>
+                        <span>Mostrar datos sensibles</span>
+                        <label class="switch">
+                            <input type="checkbox" id="privacy-toggle" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL EN 2 COLUMNAS (DESKTOP) / 1 COLUMNA (MÓVIL) -->
+        <div class="main-layout">
+            
+            <!-- COLUMNA IZQUIERDA -->
+            <aside class="left-column">
+                
+                <!-- DATOS PERSONALES Y CONTACTO -->
+                <section class="card animate-on-scroll" id="contacto">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-address-card"></i> Datos Personales
+                    </h2>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i class="fa-solid fa-id-card"></i>
+                            <div class="info-content">
+                                <span class="label">Cédula de Ciudadanía</span>
+                                <span class="val private-data">1.065.597.973</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <div class="info-content">
+                                <span class="label">Fecha de Nacimiento</span>
+                                <span class="val">05/02/1988</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="info-content">
+                                <span class="label">Lugar de Nacimiento</span>
+                                <span class="val">Valledupar, Cesar</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-heart"></i>
+                            <div class="info-content">
+                                <span class="label">Estado Civil</span>
+                                <span class="val">Soltera</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-house"></i>
+                            <div class="info-content">
+                                <span class="label">Dirección</span>
+                                <span class="val private-data">Manzana 77 Casa 9, Garupal</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="info-content">
+                                <span class="label">Teléfono</span>
+                                <span class="val private-data">
+                                    <a href="tel:3004615549">3004615549</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="info-content">
+                                <span class="label">Correo Electrónico</span>
+                                <span class="val">
+                                    <a href="mailto:g.lorena.daza@gmail.com">g.lorena.daza@gmail.com</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- HABILIDADES -->
+                <section class="card animate-on-scroll">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-star"></i> Habilidades
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span class="skill-name">Herramientas informáticas</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-headset"></i>
+                            <span class="skill-name">Atención al cliente / Servicio</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="skill-name">Manejo de grupos</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-child"></i>
+                            <span class="skill-name">Trabajo con primera infancia</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <span class="skill-name">Procesos pedagógicos</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-folder-tree"></i>
+                            <span class="skill-name">Organización documental</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-comments"></i>
+                            <span class="skill-name">Comunicación asertiva</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <span class="skill-name">Sensibilización y capacitación</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span class="skill-name">Trabajo en equipo</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="skill-name">Responsabilidad</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INFORMACIÓN ADICIONAL -->
+                <section class="card animate-on-scroll">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-circle-info"></i> Formación Adicional
+                    </h2>
+                    <div style="font-size: 0.9rem;">
+                        <div style="font-weight: 600; color: var(--text-dark); margin-bottom: 4px;">
+                            Pautas para el Fomento del Desarrollo Cognitivo, Emocional y Social en la Primera Infancia
+                        </div>
+                        <div style="color: var(--text-muted); font-size: 0.82rem; display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span><i class="fa-regular fa-calendar"></i> Noviembre de 2016</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Valledupar, Cesar</span>
+                        </div>
+                    </div>
+                </section>
+
+            </aside>
+
+            <!-- COLUMNA DERECHA -->
+            <main class="right-column">
+                
+                <!-- PERFIL PROFESIONAL -->
+                <section class="card animate-on-scroll" id="perfil">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-user-tie"></i> Perfil Profesional
+                    </h2>
+                    <p style="text-align: justify; font-size: 0.95rem; color: var(--text-dark); line-height: 1.7;">
+                        Persona con capacidad para utilizar las aplicaciones informáticas necesarias para el desarrollo del trabajo. Cuenta con conocimientos para aplicar técnicamente sistemas de clasificación y ordenamiento de documentos de gestión relacionados con procesos de servicio al cliente.
+                    </p>
+                    <p style="text-align: justify; font-size: 0.95rem; color: var(--text-dark); line-height: 1.7; margin-top: 12px;">
+                        Posee capacidad para analizar rápidamente los conocimientos relacionados con los productos del área de trabajo, así como habilidades para el manejo de grupos. Cuenta además con capacidad para dictar charlas, educar y sensibilizar al personal en temas asignados.
+                    </p>
+                </section>
+
+                <!-- FORMACIÓN ACADÉMICA -->
+                <section class="card animate-on-scroll" id="estudios">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-graduation-cap"></i> Formación Académica
+                    </h2>
+                    
+                    <div class="timeline">
+                        <!-- Estudio 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title">Formación Técnica</div>
+                                <span class="badge">INSTECOM</span>
+                            </div>
+                            <div class="timeline-subtitle">Técnico en Atención a la Primera Infancia</div>
+                            <div class="timeline-meta">
+                                <span><i class="fa-regular fa-calendar"></i> Diciembre de 2017</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Valledupar</span>
+                            </div>
+                        </div>
+
+                        <!-- Estudio 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title">Educación Secundaria</div>
+                                <span class="badge">CASD Simón Bolívar</span>
+                            </div>
+                            <div class="timeline-subtitle">Bachiller Técnico</div>
+                            <div class="timeline-meta">
+                                <span><i class="fa-regular fa-calendar"></i> Diciembre de 2004</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Valledupar</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- OTROS ESTUDIOS Y CURSOS -->
+                <section class="card animate-on-scroll" id="cursos">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-certificate"></i> Cursos y Formación Complementaria
+                    </h2>
+                    
+                    <div class="courses-grid">
+                        <!-- Curso 1 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Higiene y Manipulación de Alimentos</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Junio de 2022</div>
+                        </div>
+
+                        <!-- Curso 2 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Curso Especial en Aplicación de la Estrategia AIEPI</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Septiembre de 2020</div>
+                        </div>
+
+                        <!-- Curso 3 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Curso Especial en Referentes Técnicos de la Educación Inicial</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Junio de 2020</div>
+                        </div>
+
+                        <!-- Curso 4 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Buenas Prácticas de Manufactura en la Industria de Alimentos y Bebidas</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Agosto de 2020</div>
+                        </div>
+
+                        <!-- Curso 5 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Inducción a Procesos Pedagógicos</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Marzo de 2018</div>
+                        </div>
+
+                        <!-- Curso 6 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Fortalecimiento en la Primera Infancia</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Junio de 2017</div>
+                        </div>
+
+                        <!-- Curso 7 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Aplicación de Principios en la Vigilancia en Salud Pública</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Junio de 2021</div>
+                        </div>
+
+                        <!-- Curso 8 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Humanización de la Atención en Salud</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Agosto de 2022</div>
+                        </div>
+
+                        <!-- Curso 9 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Desarrollo de Habilidades para el Bienestar Familiar y Comunitario</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Mayo de 2021</div>
+                        </div>
+
+                        <!-- Curso 10 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Entornos Saludables para el Desarrollo Humano y la Calidad de Vida</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> No especificada</div>
+                        </div>
+
+                        <!-- Curso 11 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Primeros Auxilios Psicológicos</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> No especificada</div>
+                        </div>
+
+                        <!-- Curso 12 -->
+                        <div class="course-card">
+                            <div>
+                                <div class="course-institution">SENA</div>
+                                <div class="course-name">Intervención de Factores Psicosociales</div>
+                            </div>
+                            <div class="course-date"><i class="fa-regular fa-calendar"></i> Noviembre de 2021</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EXPERIENCIA LABORAL -->
+                <section class="card animate-on-scroll" id="experiencia">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-briefcase"></i> Experiencia Laboral
+                    </h2>
+
+                    <div class="timeline">
+                        <!-- Exp 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title">Auxiliar pedagógico</div>
+                                <span class="badge">APSEACOM</span>
+                            </div>
+                            <div class="timeline-subtitle">Periodo: 01 de febrero de 2022 – 13 de junio de 2022</div>
+                            <div class="timeline-meta">
+                                <span><i class="fa-regular fa-clock"></i> Duración: 5 meses</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Valledupar, Cesar</span>
+                                <span><i class="fa-solid fa-user-check"></i> Jefe inmediato: Camilo Romero</span>
+                            </div>
+                        </div>
+
+                        <!-- Exp 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title">Auxiliar pedagógico</div>
+                                <span class="badge">APSEACOM</span>
+                            </div>
+                            <div class="timeline-subtitle">Periodo: 09 de marzo de 2021 – 31 de diciembre de 2021</div>
+                            <div class="timeline-meta">
+                                <span><i class="fa-regular fa-clock"></i> Duración: 9 meses</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Valledupar, Cesar</span>
+                                <span><i class="fa-solid fa-user-check"></i> Jefe inmediato: Camilo Romero</span>
+                            </div>
+                        </div>
+
+                        <!-- Exp 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title">Auxiliar pedagógico</div>
+                                <span class="badge">Fundación José Eustasio Rivera</span>
+                            </div>
+                            <div class="timeline-subtitle">Periodo: 09 de marzo de 2020 – 30 de agosto de 2020</div>
+                            <div class="timeline-meta">
+                                <span><i class="fa-regular fa-clock"></i> Duración: 6 meses</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Valledupar, Cesar</span>
+                                <span><i class="fa-solid fa-user-check"></i> Jefe inmediato: Claudia Varón</span>
+                            </div>
+                        </div>
+
+                        <!-- Exp 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title">Auxiliar pedagógico</div>
+                                <span class="badge">Fundación CENE</span>
+                            </div>
+                            <div class="timeline-subtitle">Periodo: 23 de octubre de 2018 – 24 de octubre de 2019</div>
+                            <div class="timeline-meta">
+                                <span><i class="fa-regular fa-clock"></i> Duración: 1 año</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Valledupar</span>
+                                <span><i class="fa-solid fa-user-check"></i> Jefe inmediato: Rosalba Daza</span>
+                            </div>
+                        </div>
+
+                        <!-- Exp 5 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title">Auxiliar pedagógico</div>
+                                <span class="badge">Fundación CENE</span>
+                            </div>
+                            <div class="timeline-subtitle">Periodo: 12 de junio de 2017 – 21 de septiembre de 2018</div>
+                            <div class="timeline-meta">
+                                <span><i class="fa-regular fa-clock"></i> Duración: No especificada</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Valledupar</span>
+                                <span><i class="fa-solid fa-user-check"></i> Jefe inmediato: No especificado</span>
+                            </div>
+                        </div>
+
+                        <!-- Exp 6 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title">Auxiliar pedagógico</div>
+                                <span class="badge">Colegio Mundo Marino de los Niños</span>
+                            </div>
+                            <div class="timeline-subtitle">Periodo: Febrero de 2007 – abril de 2007</div>
+                            <div class="timeline-meta">
+                                <span><i class="fa-regular fa-clock"></i> Duración: No especificada</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Valledupar</span>
+                                <span><i class="fa-solid fa-user-check"></i> Jefe inmediato: No especificado</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- REFERENCIAS -->
+                <section class="card animate-on-scroll" id="referencias">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-users-rectangle"></i> Referencias
+                    </h2>
+
+                    <h3 style="font-size: 1rem; color: var(--primary-fuchsia); margin-bottom: 12px; font-weight: 600;">
+                        Referencias Laborales
+                    </h3>
+                    <div class="refs-grid" style="margin-bottom: 25px;">
+                        <div class="ref-card">
+                            <div class="ref-name">Rosalba Daza Pabón</div>
+                            <div class="ref-detail">Fundación CENE</div>
+                            <div class="ref-phone private-data">
+                                <i class="fa-solid fa-phone" style="color: var(--primary-fuchsia);"></i>
+                                <a href="tel:3176432210">3176432210</a>
+                            </div>
+                        </div>
+
+                        <div class="ref-card">
+                            <div class="ref-name">Claudia Varón</div>
+                            <div class="ref-detail">Fundación José Eustasio Rivera</div>
+                            <div class="ref-phone private-data">
+                                <i class="fa-solid fa-phone" style="color: var(--primary-fuchsia);"></i>
+                                <a href="tel:3106752552">3106752552</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="font-size: 1rem; color: var(--primary-fuchsia); margin-bottom: 12px; font-weight: 600;">
+                        Referencias Familiares
+                    </h3>
+                    <div class="refs-grid">
+                        <div class="ref-card">
+                            <div class="ref-name">Marisela Daza Pallares</div>
+                            <div class="ref-detail">Abogada – Especialista</div>
+                            <div class="ref-phone private-data">
+                                <i class="fa-solid fa-mobile-screen-button" style="color: var(--primary-fuchsia);"></i>
+                                <a href="tel:3205178590">3205178590</a>
+                            </div>
+                        </div>
+
+                        <div class="ref-card">
+                            <div class="ref-name">Mery Helen Castillo Daza</div>
+                            <div class="ref-detail">Nutricionista</div>
+                            <div class="ref-phone private-data">
+                                <i class="fa-solid fa-mobile-screen-button" style="color: var(--primary-fuchsia);"></i>
+                                <a href="tel:3015457067">3015457067</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Gisel Lorena Daza Pallares - Hoja de Vida Profesional</p>
+            <p style="font-size: 0.78rem; margin-top: 5px; color: var(--text-muted);">
+                Desarrollado por Jeiner Cotes - 3022736655
+            </p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button class="back-to-top" id="backToTop" title="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JAVASCRIPT PURO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. AÑO ACTUAL EN FOOTER
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // 2. MODO OSCURO / MODO CLARO
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeIcon = themeToggleBtn.querySelector('i');
+
+            // Comprobar preferencia guardada
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+
+            themeToggleBtn.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                if (currentTheme === 'dark') {
+                    document.documentElement.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'light');
+                    themeIcon.classList.replace('fa-sun', 'fa-moon');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                    themeIcon.classList.replace('fa-moon', 'fa-sun');
+                }
+            });
+
+            // 3. MENÚ HAMBURGUESA (MÓVIL)
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = hamburger.querySelector('i');
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.replace('fa-bars', 'fa-xmark');
+                } else {
+                    icon.classList.replace('fa-xmark', 'fa-bars');
+                }
+            });
+
+            // Cerrar menú al dar click en un enlace
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    const icon = hamburger.querySelector('i');
+                    if (icon) icon.classList.replace('fa-xmark', 'fa-bars');
+                });
+            });
+
+            // 4. CONTROL DE PRIVACIDAD / OCULTAR DATOS SENSIBLES
+            const privacyToggle = document.getElementById('privacy-toggle');
+            const privateElements = document.querySelectorAll('.private-data');
+
+            function updatePrivacy() {
+                privateElements.forEach(el => {
+                    if (privacyToggle.checked) {
+                        el.classList.remove('hidden-data');
+                    } else {
+                        el.classList.add('hidden-data');
+                    }
+                });
+            }
+
+            privacyToggle.addEventListener('change', updatePrivacy);
+
+            // 5. HIGHLIGHT DE NAVEGACIÓN Y BOTÓN "VOLVER ARRIBA"
+            const backToTopBtn = document.getElementById('backToTop');
+            const sections = document.querySelectorAll('section[id], header[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                // Botón volver arriba
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+
+                // Scrollspy para resaltar el menú activo
+                let currentSection = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.offsetHeight;
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // 6. ANIMACIÓN AL APARECER ELEMENTOS (SCROLL INTERSECTION OBSERVER)
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
