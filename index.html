@@ -11,7 +11,7 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=J9RYoe2Zm-ZTRvnwnYLtlSWPiJOxXYvDghQISBx9HVEcjcvkR4yIdBZyVqQ50RxitHDHerNbj9sgtw-xZMfOkTNts4NMSgv5lyYsfEHvHjH6LkuxBEcwVoX8_3LnAW5pXmp7UoD2vPdRf80RS-9d_PQ4XEQS52zmLc7BtzzLXLeE65wHXMNkxlpUAIt30b_d5KTb5Hya71eQkVt8-SC1uMe_K2DEcYboLQgesmkVEiXMvNxq-Fo_v5kHUKIxd-AeBJXYIdvx-589LrRVToDby_Py7N8_f4niwJdeUKu8vWU6X6EYjKV60sHT_7Db4DqB" charset="UTF-8"></script><style>
+    <style>
         /* ==========================================
            VARIABLES Y PALETA DE COLORES
            ========================================== */
@@ -713,6 +713,32 @@
             transform: translateY(-3px);
         }
 
+        /* BOTÓN FLOTANTE DE WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 80px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+            font-size: 1.8rem;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            color: white;
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
         /* PRIVACIDAD / BLUR PARA DATOS SENSIBLES */
         .private-data.hidden-data {
             filter: blur(5px);
@@ -793,6 +819,7 @@
             .hero-actions, 
             .privacy-toggle-box, 
             .back-to-top, 
+            .whatsapp-float,
             .btn-icon,
             .hamburger {
                 display: none !important;
@@ -898,8 +925,6 @@
             <div class="hero-content">
                 <div class="profile-img-container">
                     <div class="profile-img-placeholder">
-                        
-                       
                         <img src="img/giseldaza.png" alt="Gisel Daza">
                     </div>
                 </div>
@@ -916,7 +941,7 @@
                             <i class="fa-solid fa-download"></i> Descargar HV Completa PDF
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1515SZZm8BJy0uasnF5Sy2gt1NqcxbyR8/view?usp=sharing" class="btn btn-second">
+                        <a href="https://drive.google.com/file/d/1515SZZm8BJy0uasnF5Sy2gt1NqcxbyR8/view?usp=drive_link" class="btn btn-second">
                             <i class="fa-solid fa-download"></i> Descargar HV Sencilla PDF
                         </a>
 
@@ -1407,6 +1432,15 @@
         </div>
     </div>
 
+    <!-- BOTÓN FLOTANTE FIJO DE WHATSAPP -->
+    <a href="https://wa.me/573004615549?text=Hola%20Gisel,%20me%20gustar%C3%ADa%20contactarme%20contigo." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       title="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
     <!-- FOOTER -->
     <footer>
         <div class="container">
@@ -1414,7 +1448,7 @@
             <p style="font-size: 0.78rem; margin-top: 5px; color: var(--text-muted);">
                 Elaborado por Jeiner Cotes - 3022736655
                 <br>
-                Desarrollador Páginas Web
+                Desarrollador de Páginas Web
             </p>
         </div>
     </footer>
